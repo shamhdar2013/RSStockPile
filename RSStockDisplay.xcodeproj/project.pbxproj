@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF2F03B21F8AC76700C173B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B11F8AC76700C173B1 /* main.m */; };
+		DF2F03B51F8AC76700C173B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B41F8AC76700C173B1 /* AppDelegate.m */; };
+		DF2F03B81F8AC76700C173B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B71F8AC76700C173B1 /* ViewController.m */; };
+		DF2F03BB1F8AC76700C173B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03B91F8AC76700C173B1 /* Main.storyboard */; };
+		DF2F03BE1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */; };
+		DF2F03C01F8AC76700C173B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */; };
+		DF2F03C31F8AC76700C173B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03C11F8AC76700C173B1 /* LaunchScreen.storyboard */; };
+		DF2F03CE1F8AC76700C173B1 /* RSStockDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03CD1F8AC76700C173B1 /* RSStockDisplayTests.m */; };
+		DF2F03D91F8AC76700C173B1 /* RSStockDisplayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03D81F8AC76700C173B1 /* RSStockDisplayUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF2F03CA1F8AC76700C173B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2F03A51F8AC76700C173B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF2F03AC1F8AC76700C173B1;
+			remoteInfo = RSStockDisplay;
+		};
+		DF2F03D51F8AC76700C173B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF2F03A51F8AC76700C173B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF2F03AC1F8AC76700C173B1;
+			remoteInfo = RSStockDisplay;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF2F03AD1F8AC76700C173B1 /* RSStockDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSStockDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2F03B11F8AC76700C173B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF2F03B31F8AC76700C173B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF2F03B41F8AC76700C173B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF2F03B61F8AC76700C173B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DF2F03B71F8AC76700C173B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF2F03BA1F8AC76700C173B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF2F03BD1F8AC76700C173B1 /* RSStockDisplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSStockDisplay.xcdatamodel; sourceTree = "<group>"; };
+		DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF2F03C21F8AC76700C173B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF2F03C41F8AC76700C173B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2F03C91F8AC76700C173B1 /* RSStockDisplayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSStockDisplayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2F03CD1F8AC76700C173B1 /* RSStockDisplayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSStockDisplayTests.m; sourceTree = "<group>"; };
+		DF2F03CF1F8AC76700C173B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2F03D41F8AC76700C173B1 /* RSStockDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSStockDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF2F03D81F8AC76700C173B1 /* RSStockDisplayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSStockDisplayUITests.m; sourceTree = "<group>"; };
+		DF2F03DA1F8AC76700C173B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF2F03AA1F8AC76700C173B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03C61F8AC76700C173B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03D11F8AC76700C173B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF2F03A41F8AC76700C173B1 = {
+			isa = PBXGroup;
+			children = (
+				DF2F03AF1F8AC76700C173B1 /* RSStockDisplay */,
+				DF2F03CC1F8AC76700C173B1 /* RSStockDisplayTests */,
+				DF2F03D71F8AC76700C173B1 /* RSStockDisplayUITests */,
+				DF2F03AE1F8AC76700C173B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF2F03AE1F8AC76700C173B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03AD1F8AC76700C173B1 /* RSStockDisplay.app */,
+				DF2F03C91F8AC76700C173B1 /* RSStockDisplayTests.xctest */,
+				DF2F03D41F8AC76700C173B1 /* RSStockDisplayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF2F03AF1F8AC76700C173B1 /* RSStockDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03B31F8AC76700C173B1 /* AppDelegate.h */,
+				DF2F03B41F8AC76700C173B1 /* AppDelegate.m */,
+				DF2F03B61F8AC76700C173B1 /* ViewController.h */,
+				DF2F03B71F8AC76700C173B1 /* ViewController.m */,
+				DF2F03B91F8AC76700C173B1 /* Main.storyboard */,
+				DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */,
+				DF2F03C11F8AC76700C173B1 /* LaunchScreen.storyboard */,
+				DF2F03C41F8AC76700C173B1 /* Info.plist */,
+				DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */,
+				DF2F03B01F8AC76700C173B1 /* Supporting Files */,
+			);
+			path = RSStockDisplay;
+			sourceTree = "<group>";
+		};
+		DF2F03B01F8AC76700C173B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03B11F8AC76700C173B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF2F03CC1F8AC76700C173B1 /* RSStockDisplayTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03CD1F8AC76700C173B1 /* RSStockDisplayTests.m */,
+				DF2F03CF1F8AC76700C173B1 /* Info.plist */,
+			);
+			path = RSStockDisplayTests;
+			sourceTree = "<group>";
+		};
+		DF2F03D71F8AC76700C173B1 /* RSStockDisplayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03D81F8AC76700C173B1 /* RSStockDisplayUITests.m */,
+				DF2F03DA1F8AC76700C173B1 /* Info.plist */,
+			);
+			path = RSStockDisplayUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF2F03AC1F8AC76700C173B1 /* RSStockDisplay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2F03DD1F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplay" */;
+			buildPhases = (
+				DF2F03A91F8AC76700C173B1 /* Sources */,
+				DF2F03AA1F8AC76700C173B1 /* Frameworks */,
+				DF2F03AB1F8AC76700C173B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSStockDisplay;
+			productName = RSStockDisplay;
+			productReference = DF2F03AD1F8AC76700C173B1 /* RSStockDisplay.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF2F03C81F8AC76700C173B1 /* RSStockDisplayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2F03E01F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayTests" */;
+			buildPhases = (
+				DF2F03C51F8AC76700C173B1 /* Sources */,
+				DF2F03C61F8AC76700C173B1 /* Frameworks */,
+				DF2F03C71F8AC76700C173B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF2F03CB1F8AC76700C173B1 /* PBXTargetDependency */,
+			);
+			name = RSStockDisplayTests;
+			productName = RSStockDisplayTests;
+			productReference = DF2F03C91F8AC76700C173B1 /* RSStockDisplayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF2F03D31F8AC76700C173B1 /* RSStockDisplayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF2F03E31F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayUITests" */;
+			buildPhases = (
+				DF2F03D01F8AC76700C173B1 /* Sources */,
+				DF2F03D11F8AC76700C173B1 /* Frameworks */,
+				DF2F03D21F8AC76700C173B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF2F03D61F8AC76700C173B1 /* PBXTargetDependency */,
+			);
+			name = RSStockDisplayUITests;
+			productName = RSStockDisplayUITests;
+			productReference = DF2F03D41F8AC76700C173B1 /* RSStockDisplayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF2F03A51F8AC76700C173B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "RADHIKA SHARMA";
+				TargetAttributes = {
+					DF2F03AC1F8AC76700C173B1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UA2WZ4PLLC;
+						ProvisioningStyle = Automatic;
+					};
+					DF2F03C81F8AC76700C173B1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UA2WZ4PLLC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF2F03AC1F8AC76700C173B1;
+					};
+					DF2F03D31F8AC76700C173B1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = UA2WZ4PLLC;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF2F03AC1F8AC76700C173B1;
+					};
+				};
+			};
+			buildConfigurationList = DF2F03A81F8AC76700C173B1 /* Build configuration list for PBXProject "RSStockDisplay" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF2F03A41F8AC76700C173B1;
+			productRefGroup = DF2F03AE1F8AC76700C173B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF2F03AC1F8AC76700C173B1 /* RSStockDisplay */,
+				DF2F03C81F8AC76700C173B1 /* RSStockDisplayTests */,
+				DF2F03D31F8AC76700C173B1 /* RSStockDisplayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF2F03AB1F8AC76700C173B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2F03C31F8AC76700C173B1 /* LaunchScreen.storyboard in Resources */,
+				DF2F03C01F8AC76700C173B1 /* Assets.xcassets in Resources */,
+				DF2F03BB1F8AC76700C173B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03C71F8AC76700C173B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03D21F8AC76700C173B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF2F03A91F8AC76700C173B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2F03B81F8AC76700C173B1 /* ViewController.m in Sources */,
+				DF2F03B51F8AC76700C173B1 /* AppDelegate.m in Sources */,
+				DF2F03BE1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld in Sources */,
+				DF2F03B21F8AC76700C173B1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03C51F8AC76700C173B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2F03CE1F8AC76700C173B1 /* RSStockDisplayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF2F03D01F8AC76700C173B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF2F03D91F8AC76700C173B1 /* RSStockDisplayUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF2F03CB1F8AC76700C173B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF2F03AC1F8AC76700C173B1 /* RSStockDisplay */;
+			targetProxy = DF2F03CA1F8AC76700C173B1 /* PBXContainerItemProxy */;
+		};
+		DF2F03D61F8AC76700C173B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF2F03AC1F8AC76700C173B1 /* RSStockDisplay */;
+			targetProxy = DF2F03D51F8AC76700C173B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF2F03B91F8AC76700C173B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2F03BA1F8AC76700C173B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF2F03C11F8AC76700C173B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2F03C21F8AC76700C173B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF2F03DB1F8AC76700C173B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF2F03DC1F8AC76700C173B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF2F03DE1F8AC76700C173B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DF2F03DF1F8AC76700C173B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DF2F03E11F8AC76700C173B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSStockDisplay.app/RSStockDisplay";
+			};
+			name = Debug;
+		};
+		DF2F03E21F8AC76700C173B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplayTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplayTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSStockDisplay.app/RSStockDisplay";
+			};
+			name = Release;
+		};
+		DF2F03E41F8AC76700C173B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSStockDisplay;
+			};
+			name = Debug;
+		};
+		DF2F03E51F8AC76700C173B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = UA2WZ4PLLC;
+				INFOPLIST_FILE = RSStockDisplayUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplayUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RSStockDisplay;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF2F03A81F8AC76700C173B1 /* Build configuration list for PBXProject "RSStockDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2F03DB1F8AC76700C173B1 /* Debug */,
+				DF2F03DC1F8AC76700C173B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF2F03DD1F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2F03DE1F8AC76700C173B1 /* Debug */,
+				DF2F03DF1F8AC76700C173B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF2F03E01F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2F03E11F8AC76700C173B1 /* Debug */,
+				DF2F03E21F8AC76700C173B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DF2F03E31F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF2F03E41F8AC76700C173B1 /* Debug */,
+				DF2F03E51F8AC76700C173B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF2F03BD1F8AC76700C173B1 /* RSStockDisplay.xcdatamodel */,
+			);
+			currentVersion = DF2F03BD1F8AC76700C173B1 /* RSStockDisplay.xcdatamodel */;
+			path = RSStockDisplay.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DF2F03A51F8AC76700C173B1 /* Project object */;
+}
