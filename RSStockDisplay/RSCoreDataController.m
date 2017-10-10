@@ -34,7 +34,7 @@
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
         if (_persistentContainer == nil) {
-            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"RSStockPile"];
+            _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"RSStockDisplay"];
             
             NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
             NSString *basePath = [paths objectAtIndex:0];
@@ -175,5 +175,29 @@
         }];
 
     }];
+}
+
+-(RSStockEntity *)getEntityWithSymbol:(NSString *)symbol
+{
+    __block RSStockEntity *mo = nil;
+    NSManagedObjectContext *moc = self.persistentContainer.viewContext; //Primary context on the main queue
+    
+    NSManagedObjectContext *private = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+    [private setParentContext:moc];
+    
+    //__weak typeof(self) weakSelf = self;
+    [private performBlock:^{
+        NSError *Fetcherror;
+        NSFetchRequest *fetch = [NSFetchRequest fetchRequestWithEntityName:@"RSStockEntity"];
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"symbol == %@", symbol];
+        [fetch setPredicate:predicate];
+        NSArray *arr = [private executeFetchRequest:fetch error:&Fetcherror];
+        
+        if(arr && arr.count > 0){
+            mo = arr[0];
+        }
+    }];
+    
+    return mo;
 }
 @end

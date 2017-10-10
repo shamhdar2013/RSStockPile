@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class RSStockEntity;
 
 @interface RSDetailViewController : UIViewController
 @property (assign) NSUInteger pageIndex;
 @property (assign) NSString *statSymbol;
+@property (strong) RSStockEntity *stockEntity;
 
 @end

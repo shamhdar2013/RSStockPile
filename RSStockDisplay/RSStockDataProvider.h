@@ -7,11 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef void (^GraphResult)(NSArray *dataPoints, NSError *error);
 
 @interface RSStockDataProvider : NSObject
 
 +(RSStockDataProvider *)sharedInstance;
 -(void)start;
-
+-(void)chartDataForSymbol:(NSString *)symbol withCompletionBlock:(GraphResult)graphBlock;
 
 @end

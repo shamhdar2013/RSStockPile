@@ -35,13 +35,50 @@
     __weak typeof(self) weakSelf = self;
     [RSDataFetcherAPI getStockQuotesForSymbols:self.stockSymbols forRange:kDay withCompletionBlock:^(NSDictionary *result, NSError *error){
         if(!error){
-            NSLog(@" quotes = %@", result);
+           // NSLog(@" quotes = %@", result);
             [weakSelf parsePriceQuotes:result];
             
         }
         
     }];
     
+}
+
+-(void)chartDataForSymbol:(NSString *)symbol withCompletionBlock:(GraphResult)graphBlock{
+    NSArray *symbols = @[symbol];
+    __weak typeof(self) weakSelf = self;
+    [RSDataFetcherAPI getStockChartForSymbols:symbols forRange:kDay withCompletionBlock:^(NSDictionary *result, NSError *error){
+        if(!error){
+            //NSLog(@" charts = %@", result);
+            NSArray *graph = [weakSelf parseChartQuotes:result];
+            //NSLog(@" Chart Results = %@", graph);
+
+            if(graphBlock){
+                graphBlock(graph, error);
+            }
+            
+        }
+        
+    }];
+}
+
+-(NSArray *)parseChartQuotes:(NSDictionary *)dictionary{
+    
+    NSArray *keys = [dictionary allKeys];
+    NSMutableArray *results = [NSMutableArray arrayWithCapacity:10];
+    for(NSString *key in keys){
+        NSArray *charts = [[dictionary objectForKey:key] objectForKey:@"chart"];
+        float val = 0.0;
+        for(NSDictionary *chart in charts ){
+            val = [[chart objectForKey:@"high"] floatValue];
+            if(val > 0.0) {
+                [results addObject:[chart objectForKey:@"high"]];
+            }
+        }
+    }
+    
+
+    return results;
 }
 
 -(void) parsePriceQuotes:(NSDictionary *)dictionary {
@@ -69,7 +106,7 @@
     }
     
     [[RSCoreDataController sharedInstance] addEntitiesToStore:results];
-    NSLog(@" results = %@", results);
+    //NSLog(@" results = %@", results);
 }
 
 

@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 #import "RSDetailViewController.h"
+#import "MPGraphView.h"
 
-@interface RSGraphViewController : RSDetailViewController
+@interface RSGraphViewController : RSDetailViewController{
+    MPGraphView *graph;
+}
 
 @end

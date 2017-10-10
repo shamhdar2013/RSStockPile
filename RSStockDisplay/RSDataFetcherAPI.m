@@ -47,6 +47,26 @@ NSString *const kStockAPIUrl = @"https://api.iextrading.com/1.0/stock/market/bat
 
 +(void)getStockChartForSymbols:(NSArray *)symbols forRange:(RangeType)range withCompletionBlock:(ChartBlock)chartBlock{
     
+    NSURLSession  *session = [NSURLSession sharedSession];
+    
+    NSURL *url = [RSDataFetcherAPI getUrlOfType:@"chart" forSymbols:symbols forRange:range];
+    
+    [[session dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
+        if(!error) {
+            NSError *jsonError;
+            NSDictionary *stocks = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:&jsonError];
+            
+            if(chartBlock){
+                chartBlock(stocks,nil);
+                
+            }
+        }
+    }] resume];
+    
+}
+
++(void)getStockChartForSymbol:(NSString *)symbols forRange:(RangeType)range withCompletionBlock:(ChartBlock)chartBlock{
+    
 }
 
 #pragma mark -internal

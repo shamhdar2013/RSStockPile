@@ -11,6 +11,7 @@
 
 typedef void(^CallbackBlock)(void);
 
+@class RSStockEntity;
 @interface RSCoreDataController : NSObject
 @property (strong, nonatomic, readonly) NSPersistentContainer *persistentContainer;
 
@@ -20,6 +21,7 @@ typedef void(^CallbackBlock)(void);
 
 -(void)addEntitiesToStore:(NSArray *)jsonArray;
 -(void)removeEntityWithSymbol:(NSString *)symbol;
+-(RSStockEntity *)getEntityWithSymbol:(NSString *)symbol;
 
 
 

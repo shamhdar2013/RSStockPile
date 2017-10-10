@@ -20,16 +20,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCq-L6-nCm">
-                        <rect key="frame" x="16" y="11" width="60" height="21"/>
+                        <rect key="frame" x="16" y="11" width="90" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="Kfd-s6-l72"/>
+                            <constraint firstAttribute="width" constant="90" id="Kfd-s6-l72"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9M-S5-aON">
-                        <rect key="frame" x="96" y="11" width="60" height="21"/>
+                        <rect key="frame" x="126" y="11" width="60" height="21"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="Ub3-0a-waZ"/>
                         </constraints>
@@ -47,9 +47,9 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-4g-AGz">
-                        <rect key="frame" x="164" y="11" width="60" height="21"/>
+                        <rect key="frame" x="134" y="11" width="90" height="21"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="aLJ-lD-Geq"/>
+                            <constraint firstAttribute="width" constant="90" id="aLJ-lD-Geq"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -69,6 +69,12 @@
                     <constraint firstAttribute="trailingMargin" secondItem="iIs-QV-ZxJ" secondAttribute="trailing" constant="8" id="uwM-Q2-5k5"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="title1" destination="TCq-L6-nCm" id="Fe8-TR-o00"/>
+                <outlet property="title2" destination="5xv-4g-AGz" id="v96-cW-AKI"/>
+                <outlet property="value1" destination="S9M-S5-aON" id="pXt-ip-Hgj"/>
+                <outlet property="value2" destination="iIs-QV-ZxJ" id="pb3-cG-nqN"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

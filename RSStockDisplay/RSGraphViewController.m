@@ -7,9 +7,11 @@
 //
 
 #import "RSGraphViewController.h"
+#import "RSStockDataProvider.h"
+#import "RSStockEntity.h"
 
 @interface RSGraphViewController ()
-
+@property (nonatomic, strong) RSStockEntity *chartEntity;
 @end
 
 @implementation RSGraphViewController
@@ -22,6 +24,37 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setStockEntity:(RSStockEntity *)stockEntity{
+    if(graph){
+        [graph removeFromSuperview];
+    }
+    if(stockEntity) {
+      
+        self.chartEntity = stockEntity;
+        self.statSymbol = stockEntity.symbol;
+        __weak typeof(self) weakSelf = self;
+        [[RSStockDataProvider sharedInstance] chartDataForSymbol:self.statSymbol withCompletionBlock:^(NSArray *data, NSError *err){
+            
+            if(!err){
+                dispatch_async(dispatch_get_main_queue(), ^ {
+                    graph = [MPPlot plotWithType:MPPlotTypeGraph frame:CGRectMake(0, 30, self.view.width, 150)];
+                    
+                    graph.waitToUpdate = YES;
+                    graph.values = data;
+                    
+                    graph.graphColor = [UIColor redColor];
+                    graph.curved = YES;
+                    
+                    
+                    [weakSelf.view addSubview:graph];
+                    [graph animate];
+                });
+            }
+            
+        }];
+    }
 }
 
 /*

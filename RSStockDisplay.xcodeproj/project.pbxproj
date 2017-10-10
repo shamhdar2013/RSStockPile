@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F93D8309359FC96CC3FE4EE /* libPods-RSStockDisplayUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FACDAEC1AB069D5550FB274 /* libPods-RSStockDisplayUITests.a */; };
+		40DB2B3B3FE3BA97A33648A5 /* libPods-RSStockDisplay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EEB796653A79C339D61CB290 /* libPods-RSStockDisplay.a */; };
+		D59F2048A27E5D84B08858C3 /* libPods-RSStockDisplayTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E788F3FE966216EE914C342F /* libPods-RSStockDisplayTests.a */; };
 		DF2F03B21F8AC76700C173B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B11F8AC76700C173B1 /* main.m */; };
 		DF2F03B51F8AC76700C173B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B41F8AC76700C173B1 /* AppDelegate.m */; };
-		DF2F03B81F8AC76700C173B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B71F8AC76700C173B1 /* ViewController.m */; };
+		DF2F03B81F8AC76700C173B1 /* RSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03B71F8AC76700C173B1 /* RSMainViewController.m */; };
 		DF2F03BB1F8AC76700C173B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03B91F8AC76700C173B1 /* Main.storyboard */; };
 		DF2F03BE1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */; };
 		DF2F03C01F8AC76700C173B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */; };
 		DF2F03C31F8AC76700C173B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03C11F8AC76700C173B1 /* LaunchScreen.storyboard */; };
 		DF2F03CE1F8AC76700C173B1 /* RSStockDisplayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03CD1F8AC76700C173B1 /* RSStockDisplayTests.m */; };
 		DF2F03D91F8AC76700C173B1 /* RSStockDisplayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03D81F8AC76700C173B1 /* RSStockDisplayUITests.m */; };
+		DF2F03EC1F8ACC3C00C173B1 /* RSCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03EB1F8ACC3C00C173B1 /* RSCoreDataController.m */; };
+		DF2F03F31F8ACCBF00C173B1 /* RSDataFetcherAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03F01F8ACCBF00C173B1 /* RSDataFetcherAPI.m */; };
+		DF2F03F41F8ACCBF00C173B1 /* RSStockDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03F21F8ACCBF00C173B1 /* RSStockDataProvider.m */; };
+		DF2F04011F8ACD3200C173B1 /* RSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03F61F8ACD3200C173B1 /* RSDetailViewController.m */; };
+		DF2F04021F8ACD3200C173B1 /* RSGraphViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03F81F8ACD3200C173B1 /* RSGraphViewController.m */; };
+		DF2F04031F8ACD3200C173B1 /* RSStatsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03FA1F8ACD3200C173B1 /* RSStatsTableViewCell.m */; };
+		DF2F04041F8ACD3200C173B1 /* RSStatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2F03FB1F8ACD3200C173B1 /* RSStatsTableViewCell.xib */; };
+		DF2F04051F8ACD3200C173B1 /* RSStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03FD1F8ACD3200C173B1 /* RSStatsViewController.m */; };
+		DF2F04061F8ACD3200C173B1 /* RSStockTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F03FF1F8ACD3200C173B1 /* RSStockTableViewCell.m */; };
+		DF2F04071F8ACD3200C173B1 /* RSStockTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF2F04001F8ACD3200C173B1 /* RSStockTableViewCell.xib */; };
+		DF2F040A1F8ACD6400C173B1 /* RSStockEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F04091F8ACD6400C173B1 /* RSStockEntity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,12 +50,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07B5985AD5627617E6524228 /* Pods-RSStockDisplay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplay/Pods-RSStockDisplay.release.xcconfig"; sourceTree = "<group>"; };
+		0FACDAEC1AB069D5550FB274 /* libPods-RSStockDisplayUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSStockDisplayUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2893E4FE9732CE1952B51959 /* Pods-RSStockDisplay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplay/Pods-RSStockDisplay.debug.xcconfig"; sourceTree = "<group>"; };
+		474C86ACCA46C2F21345DE65 /* Pods-RSStockDisplayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplayTests/Pods-RSStockDisplayTests.release.xcconfig"; sourceTree = "<group>"; };
+		9621F594590FD048A0D2390C /* Pods-RSStockDisplayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplayUITests/Pods-RSStockDisplayUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF635FCA763CC0364EFCDC7C /* Pods-RSStockDisplayUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplayUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplayUITests/Pods-RSStockDisplayUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF2F03AD1F8AC76700C173B1 /* RSStockDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSStockDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F03B11F8AC76700C173B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF2F03B31F8AC76700C173B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DF2F03B41F8AC76700C173B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DF2F03B61F8AC76700C173B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DF2F03B71F8AC76700C173B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DF2F03B61F8AC76700C173B1 /* RSMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSMainViewController.h; sourceTree = "<group>"; };
+		DF2F03B71F8AC76700C173B1 /* RSMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSMainViewController.m; sourceTree = "<group>"; };
 		DF2F03BA1F8AC76700C173B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF2F03BD1F8AC76700C173B1 /* RSStockDisplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSStockDisplay.xcdatamodel; sourceTree = "<group>"; };
 		DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +73,29 @@
 		DF2F03D41F8AC76700C173B1 /* RSStockDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSStockDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2F03D81F8AC76700C173B1 /* RSStockDisplayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSStockDisplayUITests.m; sourceTree = "<group>"; };
 		DF2F03DA1F8AC76700C173B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF2F03EA1F8ACC3C00C173B1 /* RSCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSCoreDataController.h; sourceTree = "<group>"; };
+		DF2F03EB1F8ACC3C00C173B1 /* RSCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSCoreDataController.m; sourceTree = "<group>"; };
+		DF2F03EF1F8ACCBF00C173B1 /* RSDataFetcherAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDataFetcherAPI.h; sourceTree = "<group>"; };
+		DF2F03F01F8ACCBF00C173B1 /* RSDataFetcherAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDataFetcherAPI.m; sourceTree = "<group>"; };
+		DF2F03F11F8ACCBF00C173B1 /* RSStockDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStockDataProvider.h; sourceTree = "<group>"; };
+		DF2F03F21F8ACCBF00C173B1 /* RSStockDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStockDataProvider.m; sourceTree = "<group>"; };
+		DF2F03F51F8ACD3200C173B1 /* RSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSDetailViewController.h; sourceTree = "<group>"; };
+		DF2F03F61F8ACD3200C173B1 /* RSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSDetailViewController.m; sourceTree = "<group>"; };
+		DF2F03F71F8ACD3200C173B1 /* RSGraphViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSGraphViewController.h; sourceTree = "<group>"; };
+		DF2F03F81F8ACD3200C173B1 /* RSGraphViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSGraphViewController.m; sourceTree = "<group>"; };
+		DF2F03F91F8ACD3200C173B1 /* RSStatsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStatsTableViewCell.h; sourceTree = "<group>"; };
+		DF2F03FA1F8ACD3200C173B1 /* RSStatsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStatsTableViewCell.m; sourceTree = "<group>"; };
+		DF2F03FB1F8ACD3200C173B1 /* RSStatsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSStatsTableViewCell.xib; sourceTree = "<group>"; };
+		DF2F03FC1F8ACD3200C173B1 /* RSStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStatsViewController.h; sourceTree = "<group>"; };
+		DF2F03FD1F8ACD3200C173B1 /* RSStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStatsViewController.m; sourceTree = "<group>"; };
+		DF2F03FE1F8ACD3200C173B1 /* RSStockTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStockTableViewCell.h; sourceTree = "<group>"; };
+		DF2F03FF1F8ACD3200C173B1 /* RSStockTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStockTableViewCell.m; sourceTree = "<group>"; };
+		DF2F04001F8ACD3200C173B1 /* RSStockTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RSStockTableViewCell.xib; sourceTree = "<group>"; };
+		DF2F04081F8ACD6400C173B1 /* RSStockEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSStockEntity.h; sourceTree = "<group>"; };
+		DF2F04091F8ACD6400C173B1 /* RSStockEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSStockEntity.m; sourceTree = "<group>"; };
+		E788F3FE966216EE914C342F /* libPods-RSStockDisplayTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSStockDisplayTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB796653A79C339D61CB290 /* libPods-RSStockDisplay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RSStockDisplay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFD036214E25F7D174F62CB4 /* Pods-RSStockDisplayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSStockDisplayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSStockDisplayTests/Pods-RSStockDisplayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40DB2B3B3FE3BA97A33648A5 /* libPods-RSStockDisplay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D59F2048A27E5D84B08858C3 /* libPods-RSStockDisplayTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,12 +119,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F93D8309359FC96CC3FE4EE /* libPods-RSStockDisplayUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44AF198B7EC147AE0F2FFBFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2893E4FE9732CE1952B51959 /* Pods-RSStockDisplay.debug.xcconfig */,
+				07B5985AD5627617E6524228 /* Pods-RSStockDisplay.release.xcconfig */,
+				FFD036214E25F7D174F62CB4 /* Pods-RSStockDisplayTests.debug.xcconfig */,
+				474C86ACCA46C2F21345DE65 /* Pods-RSStockDisplayTests.release.xcconfig */,
+				9621F594590FD048A0D2390C /* Pods-RSStockDisplayUITests.debug.xcconfig */,
+				BF635FCA763CC0364EFCDC7C /* Pods-RSStockDisplayUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DF2F03A41F8AC76700C173B1 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +146,8 @@
 				DF2F03CC1F8AC76700C173B1 /* RSStockDisplayTests */,
 				DF2F03D71F8AC76700C173B1 /* RSStockDisplayUITests */,
 				DF2F03AE1F8AC76700C173B1 /* Products */,
+				44AF198B7EC147AE0F2FFBFA /* Pods */,
+				E9C46F9612DEE27191F1CA7E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,15 +164,17 @@
 		DF2F03AF1F8AC76700C173B1 /* RSStockDisplay */ = {
 			isa = PBXGroup;
 			children = (
+				DF2F03EE1F8ACC9000C173B1 /* Network */,
+				DF2F03ED1F8ACC4900C173B1 /* Views */,
+				DF2F03E61F8AC9E500C173B1 /* CoreData */,
 				DF2F03B31F8AC76700C173B1 /* AppDelegate.h */,
 				DF2F03B41F8AC76700C173B1 /* AppDelegate.m */,
-				DF2F03B61F8AC76700C173B1 /* ViewController.h */,
-				DF2F03B71F8AC76700C173B1 /* ViewController.m */,
+				DF2F03B61F8AC76700C173B1 /* RSMainViewController.h */,
+				DF2F03B71F8AC76700C173B1 /* RSMainViewController.m */,
 				DF2F03B91F8AC76700C173B1 /* Main.storyboard */,
 				DF2F03BF1F8AC76700C173B1 /* Assets.xcassets */,
 				DF2F03C11F8AC76700C173B1 /* LaunchScreen.storyboard */,
 				DF2F03C41F8AC76700C173B1 /* Info.plist */,
-				DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */,
 				DF2F03B01F8AC76700C173B1 /* Supporting Files */,
 			);
 			path = RSStockDisplay;
@@ -143,6 +206,58 @@
 			path = RSStockDisplayUITests;
 			sourceTree = "<group>";
 		};
+		DF2F03E61F8AC9E500C173B1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F04081F8ACD6400C173B1 /* RSStockEntity.h */,
+				DF2F04091F8ACD6400C173B1 /* RSStockEntity.m */,
+				DF2F03EA1F8ACC3C00C173B1 /* RSCoreDataController.h */,
+				DF2F03EB1F8ACC3C00C173B1 /* RSCoreDataController.m */,
+				DF2F03BC1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		DF2F03ED1F8ACC4900C173B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03F51F8ACD3200C173B1 /* RSDetailViewController.h */,
+				DF2F03F61F8ACD3200C173B1 /* RSDetailViewController.m */,
+				DF2F03F71F8ACD3200C173B1 /* RSGraphViewController.h */,
+				DF2F03F81F8ACD3200C173B1 /* RSGraphViewController.m */,
+				DF2F03F91F8ACD3200C173B1 /* RSStatsTableViewCell.h */,
+				DF2F03FA1F8ACD3200C173B1 /* RSStatsTableViewCell.m */,
+				DF2F03FB1F8ACD3200C173B1 /* RSStatsTableViewCell.xib */,
+				DF2F03FC1F8ACD3200C173B1 /* RSStatsViewController.h */,
+				DF2F03FD1F8ACD3200C173B1 /* RSStatsViewController.m */,
+				DF2F03FE1F8ACD3200C173B1 /* RSStockTableViewCell.h */,
+				DF2F03FF1F8ACD3200C173B1 /* RSStockTableViewCell.m */,
+				DF2F04001F8ACD3200C173B1 /* RSStockTableViewCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DF2F03EE1F8ACC9000C173B1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F03EF1F8ACCBF00C173B1 /* RSDataFetcherAPI.h */,
+				DF2F03F01F8ACCBF00C173B1 /* RSDataFetcherAPI.m */,
+				DF2F03F11F8ACCBF00C173B1 /* RSStockDataProvider.h */,
+				DF2F03F21F8ACCBF00C173B1 /* RSStockDataProvider.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		E9C46F9612DEE27191F1CA7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEB796653A79C339D61CB290 /* libPods-RSStockDisplay.a */,
+				E788F3FE966216EE914C342F /* libPods-RSStockDisplayTests.a */,
+				0FACDAEC1AB069D5550FB274 /* libPods-RSStockDisplayUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF2F03DD1F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplay" */;
 			buildPhases = (
+				87803B21B1754F2D2B10A04F /* [CP] Check Pods Manifest.lock */,
 				DF2F03A91F8AC76700C173B1 /* Sources */,
 				DF2F03AA1F8AC76700C173B1 /* Frameworks */,
 				DF2F03AB1F8AC76700C173B1 /* Resources */,
+				A9242C9E63A377C5545390A0 /* [CP] Embed Pods Frameworks */,
+				55906A70E87C8CAD9DD02E21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF2F03E01F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayTests" */;
 			buildPhases = (
+				D7D503ACC4AA9D3BAD3C8073 /* [CP] Check Pods Manifest.lock */,
 				DF2F03C51F8AC76700C173B1 /* Sources */,
 				DF2F03C61F8AC76700C173B1 /* Frameworks */,
 				DF2F03C71F8AC76700C173B1 /* Resources */,
+				B716A47F2A75D20F523E43D6 /* [CP] Embed Pods Frameworks */,
+				242671B43C819EA1C351855A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF2F03E31F8AC76700C173B1 /* Build configuration list for PBXNativeTarget "RSStockDisplayUITests" */;
 			buildPhases = (
+				605A20E64BA9EDFCFCBD5F1F /* [CP] Check Pods Manifest.lock */,
 				DF2F03D01F8AC76700C173B1 /* Sources */,
 				DF2F03D11F8AC76700C173B1 /* Frameworks */,
 				DF2F03D21F8AC76700C173B1 /* Resources */,
+				D7C256EBD65B4825A1F97F0B /* [CP] Embed Pods Frameworks */,
+				9C551501D0B2117C4204B38B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +376,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2F04041F8ACD3200C173B1 /* RSStatsTableViewCell.xib in Resources */,
 				DF2F03C31F8AC76700C173B1 /* LaunchScreen.storyboard in Resources */,
 				DF2F03C01F8AC76700C173B1 /* Assets.xcassets in Resources */,
 				DF2F03BB1F8AC76700C173B1 /* Main.storyboard in Resources */,
+				DF2F04071F8ACD3200C173B1 /* RSStockTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,14 +400,170 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		242671B43C819EA1C351855A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplayTests/Pods-RSStockDisplayTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55906A70E87C8CAD9DD02E21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplay/Pods-RSStockDisplay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		605A20E64BA9EDFCFCBD5F1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSStockDisplayUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87803B21B1754F2D2B10A04F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSStockDisplay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C551501D0B2117C4204B38B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplayUITests/Pods-RSStockDisplayUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9242C9E63A377C5545390A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplay/Pods-RSStockDisplay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B716A47F2A75D20F523E43D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplayTests/Pods-RSStockDisplayTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7C256EBD65B4825A1F97F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RSStockDisplayUITests/Pods-RSStockDisplayUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7D503ACC4AA9D3BAD3C8073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RSStockDisplayTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF2F03A91F8AC76700C173B1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF2F03B81F8AC76700C173B1 /* ViewController.m in Sources */,
+				DF2F04031F8ACD3200C173B1 /* RSStatsTableViewCell.m in Sources */,
+				DF2F04061F8ACD3200C173B1 /* RSStockTableViewCell.m in Sources */,
+				DF2F03B81F8AC76700C173B1 /* RSMainViewController.m in Sources */,
 				DF2F03B51F8AC76700C173B1 /* AppDelegate.m in Sources */,
+				DF2F04011F8ACD3200C173B1 /* RSDetailViewController.m in Sources */,
+				DF2F04051F8ACD3200C173B1 /* RSStatsViewController.m in Sources */,
+				DF2F04021F8ACD3200C173B1 /* RSGraphViewController.m in Sources */,
+				DF2F03EC1F8ACC3C00C173B1 /* RSCoreDataController.m in Sources */,
+				DF2F03F31F8ACCBF00C173B1 /* RSDataFetcherAPI.m in Sources */,
+				DF2F03F41F8ACCBF00C173B1 /* RSStockDataProvider.m in Sources */,
 				DF2F03BE1F8AC76700C173B1 /* RSStockDisplay.xcdatamodeld in Sources */,
+				DF2F040A1F8ACD6400C173B1 /* RSStockEntity.m in Sources */,
 				DF2F03B21F8AC76700C173B1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,30 +713,33 @@
 		};
 		DF2F03DE1F8AC76700C173B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2893E4FE9732CE1952B51959 /* Pods-RSStockDisplay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
 				INFOPLIST_FILE = RSStockDisplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stockpile.RSStockPile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		DF2F03DF1F8AC76700C173B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B5985AD5627617E6524228 /* Pods-RSStockDisplay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
 				INFOPLIST_FILE = RSStockDisplay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stock.pile.RSStockDisplay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.radhika.stockpile.RSStockPile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
 		DF2F03E11F8AC76700C173B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFD036214E25F7D174F62CB4 /* Pods-RSStockDisplayTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
@@ -468,6 +753,7 @@
 		};
 		DF2F03E21F8AC76700C173B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474C86ACCA46C2F21345DE65 /* Pods-RSStockDisplayTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
@@ -481,6 +767,7 @@
 		};
 		DF2F03E41F8AC76700C173B1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9621F594590FD048A0D2390C /* Pods-RSStockDisplayUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
 				INFOPLIST_FILE = RSStockDisplayUITests/Info.plist;
@@ -493,6 +780,7 @@
 		};
 		DF2F03E51F8AC76700C173B1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF635FCA763CC0364EFCDC7C /* Pods-RSStockDisplayUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = UA2WZ4PLLC;
 				INFOPLIST_FILE = RSStockDisplayUITests/Info.plist;
