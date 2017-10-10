@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="RSStockTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKw-SB-uS8">
+                        <rect key="frame" x="14" y="16.5" width="80" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="MBy-XP-SpI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hso-0a-MiH">
+                        <rect key="frame" x="172" y="16.5" width="60" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Ywh-rr-4jc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fw-eK-K5q">
+                        <rect key="frame" x="240" y="10" width="60" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="pBA-Td-szX"/>
+                            <constraint firstAttribute="height" constant="24" id="z2C-QQ-J8q"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0fw-eK-K5q" firstAttribute="leading" secondItem="hso-0a-MiH" secondAttribute="trailing" constant="8" id="7dB-RW-QoJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0fw-eK-K5q" secondAttribute="trailing" constant="12" id="8uJ-pF-0fB"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hso-0a-MiH" secondAttribute="bottom" constant="8" id="PaG-4m-M1h"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uKw-SB-uS8" secondAttribute="bottom" constant="8" id="V9J-f3-rTF"/>
+                    <constraint firstItem="uKw-SB-uS8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="6" id="Vgh-kS-Lr5"/>
+                    <constraint firstItem="uKw-SB-uS8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="d1t-JM-s6N"/>
+                    <constraint firstItem="uKw-SB-uS8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="evi-R1-lv5"/>
+                    <constraint firstItem="0fw-eK-K5q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mwp-dT-uzH"/>
+                    <constraint firstItem="hso-0a-MiH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rWj-oT-1bQ"/>
+                    <constraint firstItem="0fw-eK-K5q" firstAttribute="leading" secondItem="hso-0a-MiH" secondAttribute="trailing" constant="8" id="s5C-8v-LK1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changePercent" destination="0fw-eK-K5q" id="QBp-L8-sfn"/>
+                <outlet property="stockPrice" destination="hso-0a-MiH" id="LRd-kc-1BP"/>
+                <outlet property="stockSymbol" destination="uKw-SB-uS8" id="t9N-uU-q8A"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
