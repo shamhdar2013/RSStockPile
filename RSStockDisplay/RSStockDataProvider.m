@@ -62,6 +62,21 @@
     }];
 }
 
+-(void)newsDataForSymbol:(NSString *)symbol withCompletionBlock:(NewsResult)newsBlock{
+    
+    NSArray *symbols = @[symbol];
+    __weak typeof(self) weakSelf = self;
+    [RSDataFetcherAPI getStockNewsForSymbols:symbols forRange:kDay withCompletionBlock:^(NSDictionary *result, NSError *error){
+        if(!error){
+            NSArray *newsItems = [weakSelf parseNewsItems:result];
+            if(newsBlock){
+                newsBlock(newsItems, nil);
+            }
+        }
+    }];
+    
+}
+
 -(NSArray *)parseChartQuotes:(NSDictionary *)dictionary{
     
     NSArray *keys = [dictionary allKeys];
@@ -78,6 +93,19 @@
     }
     
 
+    return results;
+}
+
+-(NSArray *)parseNewsItems:(NSDictionary *)dictionary{
+    NSArray *keys = [dictionary allKeys];
+    NSArray *results = nil;
+    
+    for(NSString *key in keys){
+        
+        NSArray *newsDict = [[dictionary objectForKey:key] objectForKey:@"news"];
+        
+        results = newsDict;
+    }
     return results;
 }
 

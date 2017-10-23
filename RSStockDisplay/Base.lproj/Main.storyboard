@@ -125,5 +125,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Fg-yl-EML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--News View Controller-->
+        <scene sceneID="oOh-Ld-Hpc">
+            <objects>
+                <viewController storyboardIdentifier="news_vc" id="b3C-L2-Rk4" customClass="RSNewsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ABk-RZ-qPS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ttv-yh-kD1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EsR-7z-8GV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WYQ-Lx-cKC">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="b3C-L2-Rk4" id="3UQ-E2-mAD"/>
+                                    <outlet property="delegate" destination="b3C-L2-Rk4" id="2Ro-HB-gtK"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WYQ-Lx-cKC" secondAttribute="trailing" id="2DQ-GM-kLb"/>
+                            <constraint firstItem="WYQ-Lx-cKC" firstAttribute="leading" secondItem="EsR-7z-8GV" secondAttribute="leading" id="GP9-dl-3ic"/>
+                            <constraint firstItem="ttv-yh-kD1" firstAttribute="top" secondItem="WYQ-Lx-cKC" secondAttribute="bottom" id="SQg-xf-Hki"/>
+                            <constraint firstItem="WYQ-Lx-cKC" firstAttribute="top" secondItem="ABk-RZ-qPS" secondAttribute="bottom" constant="24" id="ZnV-2i-QvR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="newsTable" destination="WYQ-Lx-cKC" id="OFQ-0l-yFP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nVJ-dd-P0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120.8" y="-545.57721139430294"/>
+        </scene>
     </scenes>
 </document>

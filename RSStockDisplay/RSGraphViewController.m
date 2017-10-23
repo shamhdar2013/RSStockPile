@@ -47,8 +47,8 @@
                     graph.graphColor = [UIColor redColor];
                     graph.curved = YES;
                     
-                    
-                    [weakSelf.view addSubview:graph];
+                    __strong typeof(weakSelf) strongSelf = weakSelf;
+                    [strongSelf.view addSubview:graph];
                     [graph animate];
                 });
             }

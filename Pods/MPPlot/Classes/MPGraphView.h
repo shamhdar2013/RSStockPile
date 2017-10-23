@@ -10,7 +10,7 @@
 #import "MPPlot.h"
 
 
-@interface MPGraphView : MPPlot{
+@interface MPGraphView : MPPlot<CAAnimationDelegate>{
     
     CAGradientLayer *gradient;
 }

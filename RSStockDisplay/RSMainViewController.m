@@ -28,8 +28,9 @@
     [[RSStockDataProvider sharedInstance] start];
     self.userDrivenChange = NO;
     [self initializeFetchedResultsController];
-    self.pageControllers = [NSMutableArray arrayWithCapacity:2];
+    self.pageControllers = [NSMutableArray arrayWithCapacity:3];
     self.selectionIdx = 0;
+    
 }
 
 - (void)viewDidLoad {
@@ -38,6 +39,8 @@
     [self.stockTable registerNib:cellNib forCellReuseIdentifier:@"stock"];
     self.stockTable.backgroundColor = [UIColor blackColor];
     self.detailsPageContainer.backgroundColor = [UIColor blackColor];
+    self.stockTable.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);
+    self.stockTable.separatorColor = [UIColor greenColor];
     
     //Adding Details View
     self.stockPageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
@@ -185,29 +188,35 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 - (RSDetailViewController *)viewControllerAtIndex:(NSUInteger)index {
     RSDetailViewController *childViewController = nil;
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    NSString *symbol = nil;
+    //NSString *symbol = nil;
    
     
         switch(index){
-        case 0:
-        {
-            childViewController = (RSDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"stats_vc"];
-            
-            break;
-        }
-        case 1:
-        {
-            childViewController = (RSDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"graph_vc"];
-            break;
-            
-        }
-        default:
-            break;
+            case 0:
+            {
+                childViewController = (RSDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"stats_vc"];
+                
+                break;
+            }
+            case 1:
+            {
+                childViewController = (RSDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"graph_vc"];
+                break;
+                
+            }
+            case 2:
+            {
+                childViewController = (RSDetailViewController *)[sb instantiateViewControllerWithIdentifier:@"news_vc"];
+                break;
+            }
+            default:
+                break;
             
     }
     
     @synchronized (self) {
         childViewController.stockEntity = self.currentEntity;
+        childViewController.pageIndex = index;
         [self.pageControllers insertObject:childViewController atIndex:index];
     }
     
@@ -235,7 +244,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
     
     index++;
     
-    if (index == 2) {
+    if (index == 3) {
         return nil;
     }
     
@@ -245,7 +254,7 @@ didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController{
